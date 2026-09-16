@@ -378,13 +378,13 @@ export async function validateIACPolicyName(inputs: Inputs): Promise<void> {
       }
     }
   } catch (error) {
-    core.debug(`Error while validating invalid policy name: ${error}`);
+    core.debug(`Error while validating policy ${inputs.policyname} : ${error}`);
     await updateChecks(
       octokit,
       checkStatic,
       Checks.Conclusion.Failure,
       [],
-      'Error while validating policy name.',
+      `Error while validating policy ${inputs.policyname}.`,
     );
     throw error;
   }
