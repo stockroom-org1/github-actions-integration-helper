@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const appConfig = {
     hostName: {
         veracode: {
-            us: 'api-agora-stage-132.stage.veracode.io',
-            eu: 'api-agora-stage-132.stage.veracode.io'
+            us: 'api-agora-stage-107.stage.veracode.io',
+            eu: 'api-agora-stage-107.stage.veracode.io'
         },
         github: 'api.github.com'
     },
